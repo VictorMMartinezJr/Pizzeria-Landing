@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --main-background: #2a2a2a;
+  --green: #3e7c17;
+  --orange: #ea5c2b;
+  --white: #f2f2f2;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--main-background);
+  width: auto;
+  color: var(--white);
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+/* Navbar */
+.navbar {
+  border-bottom: 2px solid white;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  position: relative;
+}
+/* Navbar h1 */
+.green {
+  color: var(--green);
+}
+.orange {
+  color: var(--orange);
+}
+
+/* Navbar menu icon & blob */
+.blob {
+  border-radius: 60% 40% 60% 40% / 24% 67% 33% 76%;
+  background-color: orangered;
+  height: 110%;
+  width: 80px;
+  position: absolute;
+  transition: all 0.8s ease-in-out;
+  left: -20px;
+  top: 0px;
+  z-index: 1;
+  transform-origin: right;
+}
+.blob.active {
+  transform: scaleY(23);
+  border-radius: 0;
+  width: 100%;
+  left: 0;
+  transition: all 0.8s ease-in-out;
+}
+.burger {
+  z-index: 3;
+}
+.line-1,
+.line-2,
+.line-3 {
+  height: 3px;
+  width: 25px;
+  margin: 5px 0;
+  background: var(--white);
+  z-index: 2;
+  transition: all 0.2s ease-in-out;
+}
+.line-1.active {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.line-2.active {
+  opacity: 0;
+}
+.line-3.active {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+/* Navbar Img */
+.img-cart {
+  height: 25px;
+}
+
+/* Navbar Links */
+.nav-links {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease-in-out;
+  transition-delay: 0.2s;
+  z-index: 2;
+}
+.nav-links.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.nav-link {
+  list-style: none;
+  font-size: 1.3rem;
+}
+.nav-link:nth-child(2) {
+  margin: 2rem 0;
+}
