@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Joan&display=swap");
 :root {
   --main-background: #2a2a2a;
+  --light-grey: #a3a3a3;
   --green: #3e7c17;
   --orange: #ea5c2b;
   --white: #f2f2f2;
@@ -14,14 +15,14 @@
 }
 
 body {
-  min-height: 100vh;
+  min-height: 150vh;
   background: var(--main-background);
   width: auto;
   color: var(--white);
-  font-family: "Poppins", sans-serif;
+  font-family: "Joan", serif;
   overflow-x: hidden;
 }
-/* Navbar */
+/* NAVBAR */
 .navbar {
   border-bottom: 2px solid white;
   height: 8vh;
@@ -113,4 +114,68 @@ body {
 }
 .nav-link:nth-child(2) {
   margin: 2rem 0;
+}
+
+/* HERO */
+.hero {
+  height: 92vh;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.hero-pizza-text {
+  text-align: center;
+  margin-top: 1rem;
+  flex: 1;
+}
+.hero-pizza-subtitle {
+  color: var(--green);
+  font-weight: 700;
+}
+.hero-pizza-name {
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+.hero-pizza-description {
+  color: var(--light-grey);
+  margin: 1rem 0;
+}
+.hero-pizza-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.hero-order-btn {
+  font-family: inherit;
+  font-weight: 700;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--orange);
+}
+.hero-images {
+  flex: 1;
+  width: 100%;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+.hero-img-pizza {
+  height: 280px;
+  position: absolute;
+  left: -100px;
+}
+.hero-right-arrow {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 40px;
+  margin: 0 1rem 1rem 0;
 }
