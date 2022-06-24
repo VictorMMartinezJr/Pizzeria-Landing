@@ -19,6 +19,10 @@
     <title>Pizzeria</title>
   </head>
   <body data-barba="wrapper">
+    <div class="side-socials">
+      <i class="fa-brands fa-facebook-f icon-social facebook"></i>
+      <i class="fa-brands fa-twitter icon-social twitter"></i>
+    </div>
     <!-- Nav START-->
     <nav class="navbar">
       <div class="blob"></div>
@@ -32,7 +36,9 @@
         <li class="nav-link">Gallery</li>
         <li class="nav-link">Contact</li>
       </ul>
-      <h1><span class="green">P</span>IZZOOO<span class="orange">!</span></h1>
+      <h1 class="nav-h1">
+        <span class="green">P</span>IZZOOO<span class="orange">!</span>
+      </h1>
       <img src="assets/cart.svg" alt="shopping cart" class="img-cart" />
     </nav>
     <!-- Nav END-->
@@ -53,18 +59,37 @@
           </div>
           <p class="hero-pizza-price">$10.99</p>
           <button class="hero-order-btn">ORDER NOW</button>
+          <!-- Absolutely Positioned Leaf Img & Tomatoe/Leaf Img -->
+          <img
+            src="assets/leaf.png"
+            alt="green leaf"
+            class="absolute-img hero-text-leaf"
+          />
+          <img
+            src="assets/tomato-leaf.png"
+            alt="1 tomato and 1 green leaf next to each other"
+            class="absolute-img hero-tomato-leaf-img"
+          />
         </div>
         <!-- Hero Pizza Image -->
         <div class="hero-images">
+          <!-- Main Pizza Img -->
           <img
             src="assets/pizza-special.png"
             alt="italian special pizza"
             class="hero-img-pizza"
           />
+          <!-- Right Arrow Icon -->
           <img
             src="assets/right-arrow.svg"
             alt="right-arrow"
             class="hero-right-arrow"
+          />
+          <!-- Absolutely Positioned Leaf -->
+          <img
+            src="assets/leaf.png"
+            alt="green leaf"
+            class="absolute-img hero-images-leaf"
           />
         </div>
       </div>

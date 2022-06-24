@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Joan&display=swap");
 :root {
   --main-background: #2a2a2a;
-  --light-grey: #a3a3a3;
+  --light-grey: #383838;
+  --lightest-grey: #a3a3a3;
   --green: #3e7c17;
   --orange: #ea5c2b;
   --white: #f2f2f2;
@@ -22,9 +23,11 @@ body {
   font-family: "Joan", serif;
   overflow-x: hidden;
 }
-/* NAVBAR */
+.side-socials {
+  display: none;
+}
+/** NAVBAR **/
 .navbar {
-  border-bottom: 2px solid white;
   height: 8vh;
   display: flex;
   justify-content: space-between;
@@ -42,7 +45,7 @@ body {
 
 /* Navbar menu icon & blob */
 .blob {
-  border-radius: 60% 40% 60% 40% / 24% 67% 33% 76%;
+  border-radius: 30% 70% 70% 30% / 30% 48% 52% 70%;
   background-color: orangered;
   height: 110%;
   width: 80px;
@@ -62,6 +65,7 @@ body {
 }
 .burger {
   z-index: 3;
+  cursor: pointer;
 }
 .line-1,
 .line-2,
@@ -85,6 +89,7 @@ body {
 /* Navbar Img */
 .img-cart {
   height: 25px;
+  cursor: pointer;
 }
 
 /* Navbar Links */
@@ -111,12 +116,18 @@ body {
 .nav-link {
   list-style: none;
   font-size: 1.3rem;
+  cursor: pointer;
 }
 .nav-link:nth-child(2) {
   margin: 2rem 0;
 }
 
-/* HERO */
+/** HERO **/
+.absolute-img {
+  position: absolute;
+  filter: blur(1px);
+  height: 100px;
+}
 .hero {
   height: 92vh;
   overflow-y: hidden;
@@ -129,11 +140,13 @@ body {
   align-items: center;
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 .hero-pizza-text {
   text-align: center;
   margin-top: 1rem;
   flex: 1;
+  position: relative;
 }
 .hero-pizza-subtitle {
   color: var(--green);
@@ -144,7 +157,7 @@ body {
   letter-spacing: 2px;
 }
 .hero-pizza-description {
-  color: var(--light-grey);
+  color: var(--lightest-grey);
   margin: 1rem 0;
 }
 .hero-pizza-price {
@@ -159,7 +172,15 @@ body {
   border-radius: 30px;
   border: none;
   background-color: var(--orange);
+  cursor: pointer;
 }
+.hero-text-leaf {
+  display: none;
+}
+.hero-tomato-leaf-img {
+  display: none;
+}
+/* Hero Images Section */
 .hero-images {
   flex: 1;
   width: 100%;
@@ -178,4 +199,181 @@ body {
   bottom: 0;
   height: 40px;
   margin: 0 1rem 1rem 0;
+  cursor: pointer;
+}
+/* Leaves */
+.hero-images-leaf {
+  right: -80px;
+}
+
+/** Media Queries **/
+@media screen and (min-width: 360px) {
+  .hero-pizza-text {
+    margin-top: 2rem;
+  }
+  .hero-img-pizza {
+    height: 300px;
+  }
+}
+@media screen and (min-width: 400px) {
+  .hero-pizza-name {
+    font-size: 2.5rem;
+  }
+  .hero-pizza-description {
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+    padding: 0 1rem;
+  }
+  .hero-pizza-price {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .hero-order-btn {
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav-link {
+    font-size: 2rem;
+  }
+  .nav-link:nth-child(2) {
+    margin: 3rem 0;
+  }
+  .hero-pizza-subtitle {
+    font-size: 1.2rem;
+  }
+  .hero-pizza-name {
+    font-size: 3rem;
+  }
+  .hero-pizza-description {
+    margin: 2rem 0;
+    padding: 0;
+  }
+  .hero-pizza-price {
+    margin-bottom: 2rem;
+  }
+  .hero-img-pizza {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 380px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .blob {
+    height: 130%;
+    width: 130px;
+    top: -20px;
+    left: -20px;
+  }
+  .blob.active {
+    transform: scaleY(19);
+  }
+  .nav-h1 {
+    font-size: 2rem;
+  }
+  .img-cart {
+    height: 30px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .side-socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 2rem;
+    bottom: 0;
+    z-index: 1;
+  }
+  .twitter {
+    margin: 2rem 0;
+  }
+  .icon-social {
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  .navbar {
+    padding: 0 2rem;
+  }
+  .hero-content {
+    flex-direction: row;
+    padding: 0 0 0 150px;
+  }
+  .navbar::before {
+    content: "";
+    height: 100vh;
+    width: 100px;
+    background-color: var(--light-grey);
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  .hero-pizza-text {
+    text-align: left;
+    height: 50vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .hero-pizza-subtitle {
+    font-size: 1.5rem;
+  }
+  .hero-pizza-name {
+    font-size: 4rem;
+    letter-spacing: 5px;
+  }
+  .hero-pizza-description {
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+  }
+  .hero-pizza-price {
+    margin-bottom: 1.5rem;
+  }
+  .hero-order-btn {
+    padding: 0.8rem 4rem;
+  }
+  .hero-images {
+    height: 50vh;
+  }
+  .hero-img-pizza {
+    height: 500px;
+  }
+  .hero-right-arrow {
+    bottom: -100px;
+    height: 50px;
+  }
+  .hero-text-leaf {
+    display: inline-block;
+    top: -10px;
+    left: 60%;
+    transform: translateX(-60%) rotate(40deg);
+  }
+  .hero-tomato-leaf-img {
+    display: inline-block;
+    bottom: -10px;
+    left: 60%;
+    transform: translateX(-60%) rotate(40deg);
+  }
+}
+@media screen and (min-width: 1536px) {
+  .hero-content {
+    padding-left: 200px;
+  }
+  .hero-pizza-subtitle {
+    font-size: 1.5rem;
+  }
+  .hero-pizza-name {
+    font-size: 4.5rem;
+  }
+  .hero-tomato-leaf-img {
+    height: 130px;
+  }
+  .hero-img-pizza {
+    height: 600px;
+  }
 }
