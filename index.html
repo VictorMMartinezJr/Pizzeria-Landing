@@ -14,6 +14,14 @@
     ></script>
     <!-- Barba JS -->
     <script src="https://unpkg.com/@barba/core" defer></script>
+    <!-- GSAP -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+      integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      defer
+    ></script>
     <!-- JavaScript-->
     <script src="script.js" defer></script>
     <title>Pizzeria</title>
@@ -44,8 +52,12 @@
     <!-- Nav END-->
 
     <!-- Hero START-->
-    <div class="hero" data-barba="container" data-barba-namespace="italian">
-      <div class="hero-content">
+    <div class="hero">
+      <div
+        class="hero-content"
+        data-barba="container"
+        data-barba-namespace="italian"
+      >
         <div class="hero-pizza-text">
           <div class="hero-pizza-info">
             <div class="hero-pizza-titles">
@@ -80,11 +92,13 @@
             class="hero-img-pizza"
           />
           <!-- Right Arrow Icon -->
-          <img
-            src="assets/right-arrow.svg"
-            alt="right-arrow"
-            class="hero-right-arrow"
-          />
+          <a href="pepperoni.html"
+            ><img
+              src="assets/right-arrow.svg"
+              alt="right-arrow"
+              class="hero-right-arrow"
+            />
+          </a>
           <!-- Absolutely Positioned Leaf -->
           <img
             src="assets/leaf.png"
@@ -95,5 +109,31 @@
       </div>
     </div>
     <!-- Hero END-->
+    <!-- Menu START -->
+    <section class="menu">
+      <div class="menu-content">
+        <h2 class="menu-title">Menu</h2>
+        <div class="menu-categories">
+          <div class="menu-category active" id="0">
+            <p class="menu-category-name">Pizzas</p>
+            <img
+              src="assets/menu/pizza-icon.svg"
+              alt="pizza"
+              class="menu-category-icon"
+            />
+          </div>
+          <div class="menu-category" id="1">
+            <p class="menu-category-name">Drinks</p>
+            <img
+              src="assets/menu/drink-icon.svg"
+              alt="pizza"
+              class="menu-category-icon"
+            />
+          </div>
+        </div>
+        <div class="menu-items">
+      </div>
+    </section>
+    <!-- Menu END -->
   </body>
 </html>
