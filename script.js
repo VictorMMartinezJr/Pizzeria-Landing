@@ -105,7 +105,6 @@ menuCategory.forEach((category) => {
     category.classList.add("active");
 
     if (category.id === "0") {
-      let menuItem;
       // Clear current items in menu
       menuItems.innerHTML = "";
       // Fetch new data for the menu items

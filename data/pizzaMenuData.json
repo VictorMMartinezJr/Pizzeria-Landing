@@ -12,7 +12,7 @@
     "img": "assets/pizza-pepperoni.png",
     "name": "Pepperoni",
     "calories": "140-280 cal",
-    "info": "An american classic which includes one of the country's most beloved toppings",
+    "info": "Your choice of crust covered with our signature pizza sauce, real cheese made from mozzarella, and pepperoni.",
     "price": "$8.99"
   },
   {
@@ -35,7 +35,7 @@
     "id": 4,
     "img": "assets/menu/pizza-sushi.png",
     "name": "Sushi",
-    "calories": "766 cal",
+    "calories": "766 cal/slice",
     "info": "Slightly crispy yet chewy fried rice patty as the base topped with a layer of sliced avocado, a layer of sliced salmon, tuna or crab meat",
     "price": "$15.99"
   },
@@ -60,7 +60,7 @@
     "img": "assets/menu/pizza-cheese.png",
     "name": "Cheese",
     "calories": "150-200 cal",
-    "info": "A classic pizza with tomato sauce topped with cheese",
+    "info": "Real cheese made from mozzarella on top of our signature pizza sauce with your choice of crust, then baked to a golden brown",
     "price": "$7.99"
   }
 ]
