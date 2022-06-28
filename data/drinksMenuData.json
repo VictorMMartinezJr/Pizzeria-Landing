@@ -1,0 +1,42 @@
+[
+  {
+    "id": 0,
+    "img": "assets/menu/coca-cola.png",
+    "name": "Coca Cola",
+    "calories": "182 cal",
+    "info": "A carbonated, sweetened soft drink and the world's best-selling drink",
+    "price": "$1.99"
+  },
+  {
+    "id": 1,
+    "img": "assets/menu/sprite.png",
+    "name": "Sprite",
+    "calories": "192 cal",
+    "info": "A lemon and lime-flavoured soft drink",
+    "price": "$1.99"
+  },
+  {
+    "id": 2,
+    "img": "assets/menu/fanta.png",
+    "name": "Fanta",
+    "calories": "150 cal",
+    "info": "Bright, bubbly, instantly refreshing and great tasting",
+    "price": "$1.99"
+  },
+  {
+    "id": 3,
+    "img": "assets/menu/dietcoke.png",
+    "name": "Diet Coke",
+    "calories": "0 cal",
+    "info": "All the coca-cola, none of the sugar or calores.",
+    "price": "$1.99"
+  },
+  {
+    "id": 4,
+    "img": "assets/menu/pepsi.png",
+    "name": "Pespi",
+    "calories": "150 cal",
+    "info": "A citrusy flavor carbonated drink",
+    "price": "$1.99"
+  }
+]

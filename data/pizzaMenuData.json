@@ -1,0 +1,66 @@
+[
+  {
+    "id": 0,
+    "img": "assets/pizza-special.png",
+    "name": "Italian",
+    "calories": "140-280 cal",
+    "info": "Jalapeno peppers, double pepperoni, ricotta cheese",
+    "price": "$10.99"
+  },
+  {
+    "id": 1,
+    "img": "assets/pizza-pepperoni.png",
+    "name": "Pepperoni",
+    "calories": "140-280 cal",
+    "info": "An american classic which includes one of the country's most beloved toppings",
+    "price": "$8.99"
+  },
+  {
+    "id": 2,
+    "img": "assets/pizza-hawaiian.png",
+    "name": "Hawaiian",
+    "calories": "140-280 cal",
+    "info": "Pineapple, Canadian bacon, Wisconsin mozzarella, fresh ham",
+    "price": "$12.99"
+  },
+  {
+    "id": 3,
+    "img": "assets/pizza-veggie.png",
+    "name": "Veggie",
+    "calories": "140-280 cal",
+    "info": "Fresh spinach, bell peppers, pickles, white onions, Roma tomatoes, mushrooms",
+    "price": "$11.99"
+  },
+  {
+    "id": 4,
+    "img": "assets/menu/pizza-sushi.png",
+    "name": "Sushi",
+    "calories": "766 cal",
+    "info": "Slightly crispy yet chewy fried rice patty as the base topped with a layer of sliced avocado, a layer of sliced salmon, tuna or crab meat",
+    "price": "$15.99"
+  },
+  {
+    "id": 5,
+    "img": "assets/menu/pizza-mushroom.png",
+    "name": "Mushroom",
+    "calories": "170-250 cal",
+    "info": "A white pizza covered with mozzarella cheese, goat cheese, and fresh herbs",
+    "price": "$9.99"
+  },
+  {
+    "id": 6,
+    "img": "assets/menu/pizza-tomato.png",
+    "name": "Tomato",
+    "calories": "110-220 cal",
+    "info": "Pizza topped with juicy fresh tomatoes and olives is simple, classic, and totally satisfying.",
+    "price": "$7.99"
+  },
+  {
+    "id": 7,
+    "img": "assets/menu/pizza-cheese.png",
+    "name": "Cheese",
+    "calories": "150-200 cal",
+    "info": "A classic pizza with tomato sauce topped with cheese",
+    "price": "$7.99"
+  }
+]

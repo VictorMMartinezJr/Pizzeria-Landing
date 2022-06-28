@@ -5,6 +5,12 @@ const iconBurgerLines = document.querySelectorAll(".burger-line");
 const iconBlob = document.querySelector(".blob");
 const navLinks = document.querySelector(".nav-links");
 const pizzaImg = document.querySelector(".hero-img-pizza");
+const menuItems = document.querySelector(".menu-items");
+const menuItemImg = document.querySelector(".menu-item-img");
+const menuItemName = document.querySelector(".menu-item-name");
+const menuItemCalories = document.querySelector(".menu-item-calories");
+const menuItemInfo = document.querySelector(".menu-item-info");
+const menuItemPrice = document.querySelector(".menu-item-price");
 
 // Fires when burger icon is clicked
 iconBurger.addEventListener("click", () => {
@@ -84,3 +90,109 @@ barba.init({
     },
   ],
 });
+
+// MENU SECTION
+const menuCategory = document.querySelectorAll(".menu-category");
+const tlMenuItems = gsap.timeline({
+  default: { duration: 5, ease: "Power2.easeOut" },
+});
+
+menuCategory.forEach((category) => {
+  category.addEventListener("click", (_, id) => {
+    // Remove active class from all menu categories
+    menuCategory.forEach((category) => category.classList.remove("active"));
+    // Add active class to clicked category
+    category.classList.add("active");
+
+    if (category.id === "0") {
+      let menuItem;
+      // Clear current items in menu
+      menuItems.innerHTML = "";
+      // Fetch new data for the menu items
+      fetch("data/pizzaMenuData.json")
+        .then((resp) => resp.json())
+        .then((data) => {
+          data.map((data) => {
+            menuItems.insertAdjacentHTML(
+              "beforeend",
+              `
+                      <div class="menu-item">
+                    <img src=${data.img} alt="italian special pizza" class="menu-item-img" />
+                    <span class="menu-item-titles">
+                      <p class="menu-item-name">${data.name}</p>
+                      <p class="menu-item-calories">${data.calories}</p>
+                    </span>
+                    <p class="menu-item-info">${data.info}</p>
+                    <p class="menu-item-price">${data.price}</p>
+                  </div>
+            `
+            );
+          });
+
+          tlMenuItems.fromTo(
+            menuItems,
+            { y: -100, opacity: 0 },
+            { y: 0, opacity: 1 }
+          );
+        });
+    } else if (category.id === "1") {
+      // Clear current items in menu
+      menuItems.innerHTML = "";
+      // Fetch new data for the menu items
+      fetch("data/drinksMenuData.json")
+        .then((resp) => resp.json())
+        .then((data) => {
+          data.map((data) => {
+            menuItems.insertAdjacentHTML(
+              "beforeend",
+              `
+                      <div class="menu-item">
+                    <img src=${data.img} alt="italian special pizza" class="menu-item-img" />
+                    <span class="menu-item-titles">
+                      <p class="menu-item-name">${data.name}</p>
+                      <p class="menu-item-calories">${data.calories}</p>
+                    </span>
+                    <p class="menu-item-info">${data.info}</p>
+                    <p class="menu-item-price">${data.price}</p>
+                  </div>
+            `
+            );
+          });
+
+          tlMenuItems.fromTo(
+            menuItems,
+            { y: -100, opacity: 0 },
+            { y: 0, opacity: 1 }
+          );
+        });
+    }
+  });
+});
+
+const fetchMenuPizzaData = (url) => {
+  fetch(url).then();
+};
+
+const loadMenuItems = () => {
+  fetch("data/pizzaMenuData.json")
+    .then((resp) => resp.json())
+    .then((data) => {
+      data.map((data) => {
+        menuItems.insertAdjacentHTML(
+          "beforeend",
+          `
+                <div class="menu-item">
+              <img src=${data.img} alt="italian special pizza" class="menu-item-img" />
+              <span class="menu-item-titles">
+                <p class="menu-item-name">${data.name}</p>
+                <p class="menu-item-calories">${data.calories}</p>
+              </span>
+              <p class="menu-item-info">${data.info}</p>
+              <p class="menu-item-price">${data.price}</p>
+            </div>
+      `
+        );
+      });
+    });
+};
+loadMenuItems();
