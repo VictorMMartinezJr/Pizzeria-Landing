@@ -1,7 +1,7 @@
 [
   {
     "id": 0,
-    "img": "assets/pizza-special.png",
+    "img": "assets/menu/pizza-special.jpeg",
     "name": "Italian",
     "calories": "140-280 cal",
     "info": "Jalapeno peppers, double pepperoni, ricotta cheese",
@@ -9,7 +9,7 @@
   },
   {
     "id": 1,
-    "img": "assets/pizza-pepperoni.png",
+    "img": "assets/menu/pizza-pepp.jpeg",
     "name": "Pepperoni",
     "calories": "140-280 cal",
     "info": "Your choice of crust covered with our signature pizza sauce, real cheese made from mozzarella, and pepperoni.",
@@ -17,7 +17,7 @@
   },
   {
     "id": 2,
-    "img": "assets/pizza-hawaiian.png",
+    "img": "assets/menu/pizza-hawaiian.jpeg",
     "name": "Hawaiian",
     "calories": "140-280 cal",
     "info": "Pineapple, Canadian bacon, Wisconsin mozzarella, fresh ham",
@@ -25,7 +25,7 @@
   },
   {
     "id": 3,
-    "img": "assets/pizza-veggie.png",
+    "img": "assets/menu/pizza-veggie.jpeg",
     "name": "Veggie",
     "calories": "140-280 cal",
     "info": "Fresh spinach, bell peppers, pickles, white onions, Roma tomatoes, mushrooms",
@@ -33,34 +33,34 @@
   },
   {
     "id": 4,
-    "img": "assets/menu/pizza-sushi.png",
-    "name": "Sushi",
-    "calories": "766 cal/slice",
-    "info": "Slightly crispy yet chewy fried rice patty as the base topped with a layer of sliced avocado, a layer of sliced salmon, tuna or crab meat",
+    "img": "assets/menu/pizza-cheese.jpeg",
+    "name": "Cheese",
+    "calories": "766 cal",
+    "info": "Real cheese made from mozzarella on top of our signature pizza sauce with your choice of crust, then baked to a golden brown",
     "price": "$15.99"
   },
   {
     "id": 5,
-    "img": "assets/menu/pizza-mushroom.png",
-    "name": "Mushroom",
+    "img": "assets/menu/pizza-onion.jpg",
+    "name": "Onion",
     "calories": "170-250 cal",
-    "info": "A white pizza covered with mozzarella cheese, goat cheese, and fresh herbs",
+    "info": "A white pizza covered with freshly cut onions",
     "price": "$9.99"
   },
   {
     "id": 6,
-    "img": "assets/menu/pizza-tomato.png",
-    "name": "Tomato",
+    "img": "assets/menu/pizza-gardenfresh.jpg",
+    "name": "Garden Fresh",
     "calories": "110-220 cal",
-    "info": "Pizza topped with juicy fresh tomatoes and olives is simple, classic, and totally satisfying.",
-    "price": "$7.99"
+    "info": "Pizza topped with juicy fresh mushrooms, olives, and peppers",
+    "price": "$15.99"
   },
   {
     "id": 7,
-    "img": "assets/menu/pizza-cheese.png",
-    "name": "Cheese",
+    "img": "assets/menu/pizza-sausage.jpeg",
+    "name": "Sausage",
     "calories": "150-200 cal",
-    "info": "Real cheese made from mozzarella on top of our signature pizza sauce with your choice of crust, then baked to a golden brown",
+    "info": "Our signature pizza sauce layered with sausage and real cheese made from mozzarella for a taste you'll crave.",
     "price": "$7.99"
   }
 ]

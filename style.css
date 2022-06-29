@@ -266,29 +266,48 @@ body {
   place-items: center;
 }
 .menu-item {
-  width: 270px;
-  height: 300px;
+  width: 250px;
+  height: 500px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   margin: 1rem 0;
-  background: rgba(59, 59, 59, 0.2);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(11px);
-  -webkit-backdrop-filter: blur(11px);
+  background: #000;
+  border-radius: 10px;
+  box-shadow: 0 0px 30px rgba(0, 0, 0, 0.8);
 }
-.menu-item-img {
-  height: 100px;
+.menu-item-img-container {
+  position: relative;
+}
+.menu-item-img-container::after {
+  content: "";
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  background: linear-gradient(180deg, transparent, #000);
+  bottom: 5px;
+  left: 0;
+}
+.menu-item-pizza-img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+.menu-item-soda-img {
+  height: 150px;
+  margin-top: 1rem;
   object-fit: contain;
 }
 .menu-item-titles {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 90%;
+  width: 100%;
+  padding: 0 0.5rem;
+  position: relative;
+  margin: 1rem 0;
 }
 .menu-item-name,
 .menu-item-price {
@@ -298,10 +317,54 @@ body {
   font-size: 0.9rem;
 }
 .menu-item-info {
-  max-width: 90%;
+  padding: 0 0.5rem;
   font-size: 0.9rem;
 }
+.menu-item-price {
+  margin: 1rem 0;
+  font-weight: 700;
+}
 
+.menu-item-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sizes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.size {
+  width: 30px;
+  font-weight: 700;
+  padding: 0.2rem;
+  background-color: var(--white);
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.size:nth-child(2) {
+  margin: 0 0.5rem;
+}
+.size.active {
+  background-color: var(--orange);
+  color: var(--white);
+}
+.menu-item-add-to-order {
+  padding: 0.2rem 0.5rem;
+  border: none;
+  border-radius: 2px;
+  font-weight: 700;
+  background-color: var(--white);
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.menu-item-add-to-order:active {
+  transform: scale(1.2);
+}
 /* ABOUT */
 .about {
   display: grid;
@@ -318,7 +381,6 @@ body {
   margin-top: 2rem;
 }
 .about-main {
-  /* width: 100%; */
   display: grid;
   place-items: center;
   position: relative;
@@ -360,6 +422,7 @@ body {
   font-weight: 700;
   color: var(--orange);
 }
+
 /** Media Queries **/
 @media screen and (min-width: 360px) {
   /* HERO */
@@ -438,18 +501,21 @@ body {
     width: 80%;
   }
   .menu-item {
-    height: 450px;
+    height: 550px;
+    width: 300px;
   }
-  .menu-item-img {
+  .menu-item-soda {
+    height: 430px;
+  }
+  .menu-item-pizza-img {
+    height: 250px;
+    object-fit: cover;
+  }
+  .menu-item-info {
     height: 150px;
-    margin: 1rem 0;
-  }
-  .menu-item-titles {
-    width: 80%;
-    margin-bottom: 2rem;
-  }
-  .menu-item-price {
-    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media screen and (min-width: 1024px) {

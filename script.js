@@ -11,7 +11,6 @@ const menuItemName = document.querySelector(".menu-item-name");
 const menuItemCalories = document.querySelector(".menu-item-calories");
 const menuItemInfo = document.querySelector(".menu-item-info");
 const menuItemPrice = document.querySelector(".menu-item-price");
-
 // Fires when burger icon is clicked
 iconBurger.addEventListener("click", () => {
   iconBlob.classList.toggle("active");
@@ -93,6 +92,7 @@ barba.init({
 
 // MENU SECTION
 const menuCategory = document.querySelectorAll(".menu-category");
+
 const tlMenuItems = gsap.timeline({
   default: { duration: 5, ease: "Power2.easeOut" },
 });
@@ -115,24 +115,54 @@ menuCategory.forEach((category) => {
             menuItems.insertAdjacentHTML(
               "beforeend",
               `
-                      <div class="menu-item">
-                    <img src=${data.img} alt="italian special pizza" class="menu-item-img" />
-                    <span class="menu-item-titles">
-                      <p class="menu-item-name">${data.name}</p>
-                      <p class="menu-item-calories">${data.calories}</p>
-                    </span>
-                    <p class="menu-item-info">${data.info}</p>
-                    <p class="menu-item-price">${data.price}</p>
-                  </div>
+                     <div class="menu-item">
+                <div class="menu-item-img-container">
+              <img src=${data.img} alt="italian special pizza" class="menu-item-pizza-img" />
+              </div>
+              <span class="menu-item-titles">
+                <p class="menu-item-name">${data.name}</p>
+                <p class="menu-item-calories">${data.calories}</p>
+              </span>
+              <p class="menu-item-info">${data.info}</p>
+              <p class="menu-item-price">${data.price}</p>
+              <div class="menu-item-btns">
+                <span class="sizes">
+                  <button class="size">sm</button>
+                  <button class="size">md</button>
+                  <button class="size">lg</button>
+                </span>
+                <button class="menu-item-add-to-order">ADD TO ORDER</button>
+              </div>
+            </div>
             `
             );
           });
 
+          // Add enter animation on menu cards
           tlMenuItems.fromTo(
             menuItems,
             { y: -100, opacity: 0 },
             { y: 0, opacity: 1 }
           );
+          // Add event listener to size btns after data is fetched
+          const btnSizes = document.querySelectorAll(".size");
+          btnSizes.forEach((size) => {
+            size.addEventListener("click", () => {
+              btnSizes.forEach((btn) => btn.classList.remove("active"));
+              size.classList.add("active");
+            });
+          });
+
+          // Add event listener to addToOrderBtn
+          const addToOrderBtn = document.querySelectorAll(
+            ".menu-item-add-to-order"
+          );
+          addToOrderBtn.forEach((btn) => {
+            btn.addEventListener("click", (e) => {
+              e.preventDefault();
+              btnSizes.forEach((btn) => btn.classList.remove("active"));
+            });
+          });
         });
     } else if (category.id === "1") {
       // Clear current items in menu
@@ -145,32 +175,58 @@ menuCategory.forEach((category) => {
             menuItems.insertAdjacentHTML(
               "beforeend",
               `
-                      <div class="menu-item">
-                    <img src=${data.img} alt="italian special pizza" class="menu-item-img" />
-                    <span class="menu-item-titles">
-                      <p class="menu-item-name">${data.name}</p>
-                      <p class="menu-item-calories">${data.calories}</p>
-                    </span>
-                    <p class="menu-item-info">${data.info}</p>
-                    <p class="menu-item-price">${data.price}</p>
-                  </div>
+                      <div class="menu-item menu-item-soda">
+                <div class="menu-item-img-container">
+              <img src=${data.img} alt="italian special pizza" class="menu-item-soda-img" />
+              </div>
+              <span class="menu-item-titles">
+                <p class="menu-item-name">${data.name}</p>
+                <p class="menu-item-calories">${data.calories}</p>
+              </span>
+              <p class="menu-item-info">${data.info}</p>
+              <p class="menu-item-price">${data.price}</p>
+              <div class="menu-item-btns">
+                <span class="sizes">
+                  <button class="size">sm</button>
+                  <button class="size">md</button>
+                  <button class="size">lg</button>
+                </span>
+                <button class="menu-item-add-to-order">ADD TO ORDER</button>
+              </div>
+            </div>
             `
             );
           });
 
+          // Add enter animation on menu cards
           tlMenuItems.fromTo(
             menuItems,
             { y: -100, opacity: 0 },
             { y: 0, opacity: 1 }
           );
+          // Add event listener to size btns after data is fetched
+          const btnSizes = document.querySelectorAll(".size");
+          btnSizes.forEach((size) => {
+            size.addEventListener("click", () => {
+              btnSizes.forEach((btn) => btn.classList.remove("active"));
+              size.classList.add("active");
+            });
+          });
+
+          // Add event listener to addToOrderBtn
+          const addToOrderBtn = document.querySelectorAll(
+            ".menu-item-add-to-order"
+          );
+          addToOrderBtn.forEach((btn) => {
+            btn.addEventListener("click", (e) => {
+              e.preventDefault();
+              btnSizes.forEach((btn) => btn.classList.remove("active"));
+            });
+          });
         });
     }
   });
 });
-
-const fetchMenuPizzaData = (url) => {
-  fetch(url).then();
-};
 
 const loadMenuItems = () => {
   fetch("data/pizzaMenuData.json")
@@ -181,16 +237,45 @@ const loadMenuItems = () => {
           "beforeend",
           `
                 <div class="menu-item">
-              <img src=${data.img} alt="italian special pizza" class="menu-item-img" />
+                <div class="menu-item-img-container">
+              <img src=${data.img} alt="italian special pizza" class="menu-item-pizza-img" />
+              </div>
               <span class="menu-item-titles">
                 <p class="menu-item-name">${data.name}</p>
                 <p class="menu-item-calories">${data.calories}</p>
               </span>
               <p class="menu-item-info">${data.info}</p>
               <p class="menu-item-price">${data.price}</p>
+              <div class="menu-item-btns">
+                <span class="sizes">
+                  <button class="size">sm</button>
+                  <button class="size">md</button>
+                  <button class="size">lg</button>
+                </span>
+                <button class="menu-item-add-to-order">ADD TO ORDER</button>
+              </div>
             </div>
       `
         );
+        // Add event listener to size btns after data is fetched
+        const btnSizes = document.querySelectorAll(".size");
+        btnSizes.forEach((size) => {
+          size.addEventListener("click", () => {
+            btnSizes.forEach((btn) => btn.classList.remove("active"));
+            size.classList.add("active");
+          });
+
+          // Add event listener to addToOrderBtn
+          const addToOrderBtn = document.querySelectorAll(
+            ".menu-item-add-to-order"
+          );
+          addToOrderBtn.forEach((btn) => {
+            btn.addEventListener("click", (e) => {
+              e.preventDefault();
+              btnSizes.forEach((btn) => btn.classList.remove("active"));
+            });
+          });
+        });
       });
     });
 };
