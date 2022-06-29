@@ -423,6 +423,80 @@ body {
   color: var(--orange);
 }
 
+/* REVIEWS */
+.reviews {
+  min-height: 50vh;
+  margin-top: 4rem;
+}
+.reviews-content {
+  width: 100%;
+}
+.review-cards {
+  display: grid;
+  place-items: center;
+}
+.review-card {
+  width: 90%;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #000;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0px 30px rgba(0, 0, 0, 0.8);
+}
+.reviewer {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.review-stars {
+  display: flex;
+}
+.star {
+  height: 15px;
+}
+.review-text {
+  font-size: 0.9rem;
+}
+.review-company {
+  font-weight: 700;
+}
+.review-img {
+  position: absolute;
+  height: 70px;
+  bottom: -30px;
+  right: 10px;
+}
+.newsletter {
+  min-height: 50vh;
+  background-image: url("assets/newsletter-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.6); /* Tint color */
+  background-blend-mode: multiply;
+  display: grid;
+  place-items: center;
+}
+.newsletter-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.newsletter-title {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+.newsletter-input {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+}
 /** Media Queries **/
 @media screen and (min-width: 360px) {
   /* HERO */
@@ -440,7 +514,13 @@ body {
   .about-text-block-content {
     width: 70%;
   }
+
+  /* NEWSLETTER */
+  .newsletter-title {
+    font-size: 1.5rem;
+  }
 }
+
 @media screen and (min-width: 400px) {
   /* HERO */
   .hero-pizza-name {
@@ -516,6 +596,30 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  /* REVIEWS */
+  .reviews-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .review-cards {
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+  }
+  .review-text {
+    font-size: 1rem;
+  }
+
+  /* NEWSLETTER */
+  .newsletter-title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .newsletter-input {
+    padding: 0.5rem 2rem 0.5rem 1rem;
+    width: 300px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -660,6 +764,14 @@ body {
     width: 80%;
     justify-content: space-between;
   }
+
+  /* REVIEWS */
+  .review-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .reviewer {
+    font-size: 1.5rem;
+  }
 }
 @media screen and (min-width: 1536px) {
   .section-title {
@@ -712,5 +824,14 @@ body {
   }
   .about-text-content {
     width: 70%;
+  }
+  /* NEWSLETTER */
+  .newsletter-title {
+    font-size: 2.5rem;
+  }
+  .newsletter-input {
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
   }
 }
