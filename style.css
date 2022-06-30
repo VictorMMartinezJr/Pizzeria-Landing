@@ -476,7 +476,7 @@ body {
   background-image: url("assets/newsletter-bg.jpg");
   background-size: cover;
   background-position: center;
-  background-color: rgba(0, 0, 0, 0.6); /* Tint color */
+  background-color: rgba(0, 0, 0, 0.8); /* Tint color */
   background-blend-mode: multiply;
   display: grid;
   place-items: center;
@@ -496,6 +496,60 @@ body {
   padding: 0.5rem 1rem;
   border-radius: 5px;
   border: none;
+}
+
+/* FOOTER */
+.footer {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-apps {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+}
+.footer-apps-title {
+  text-align: center;
+}
+.footer-app-store {
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.footer-social {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.footer-social:nth-last-child(1) {
+  margin-right: 0;
+}
+.footer-nav {
+  margin-top: 2rem;
+}
+.footer-links {
+  text-align: center;
+}
+.footer-link {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.copyright {
+  display: flex;
+  align-items: center;
+  font-size: 0.7rem;
+  margin-bottom: 0.5rem;
+  color: #a3a3a3;
+}
+.copyright-img {
+  height: 12px;
+  margin: 0 0.2rem;
+  color: #ea5c2b;
 }
 /** Media Queries **/
 @media screen and (min-width: 360px) {
@@ -679,7 +733,8 @@ body {
     bottom: 0;
     z-index: 1;
   }
-  .twitter {
+  .twitter,
+  .tiktok {
     margin: 2rem 0;
   }
   .icon-social {
