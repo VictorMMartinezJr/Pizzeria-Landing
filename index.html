@@ -43,9 +43,9 @@
         <div class="burger-line line-3"></div>
       </div>
       <ul class="nav-links">
-        <li class="nav-link">Menu</li>
-        <li class="nav-link">Gallery</li>
-        <li class="nav-link">Contact</li>
+         <a href="#menu" class="nav-link-a"><li class="footer-link">Menu</li></a>
+         <a href="#about" class="nav-link-a"><li class="footer-link">About</li></a>
+         <a href="#reviews" class="nav-link-a"><li class="footer-link">Reviews</li></a>
       </ul>
       <h1 class="nav-h1">
         <span class="green">P</span>IZZOOO<span class="orange">!</span>
@@ -114,7 +114,7 @@
     <!-- Hero END-->
 
     <!-- Menu START -->
-    <section class="menu">
+    <section class="menu" id="menu">
       <div class="menu-content">
         <h2 class="menu-title section-title">Menu</h2>
         <div class="menu-categories">
@@ -142,7 +142,7 @@
     <!-- Menu END -->
 
     <!-- About BEGIN -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="about-content">
         <div class="about-main">
           <!-- About Img -->
@@ -165,7 +165,7 @@
     <!-- About END -->
 
     <!-- REVIEW START -->
-    <section class="reviews">
+    <section class="reviews" id="reviews">
       <div class="reviews-content">
         <div class="review-cards">
           <!-- Card 1 -->
@@ -235,32 +235,35 @@
 
     <!-- FOOTER START -->
     <footer class="footer">
+      <div class="footer-content">
+      <div class="footer-apps-socials-container">
       <!-- Footer Apps -->
-      <div class="footer-apps">
-        <h2 class="footer-apps-title">Get our mobile app</h2>
-        <span class="footer-app-store">
-          <i class="fa-brands fa-apple"></i>
-          <a href="#">APPLE STORE</a>
-        </span>
-        <span class="footer-app-store">
-          <i class="fa-brands fa-google-play"></i>
-          <a href="#">GOOGLE PLAY STORE</a>
-        </span>
-      </div>
-      <!-- Footer Socials -->
-      <div class="footer-socials">
-        <i class="fa-brands fa-facebook-f icon-social facebook footer-social"></i>
-        <i class="fa-brands fa-instagram footer-social"></i>
-        <i class="fa-brands fa-tiktok footer-social"></i>
-        <i class="fa-brands fa-twitter icon-social twitter footer-social"></i>
+        <div class="footer-apps">
+          <h2 class="footer-apps-title">Get our mobile app</h2>
+          <span class="footer-app-store">
+            <i class="fa-brands fa-apple"></i>
+            <a href="#">APPLE STORE</a>
+          </span>
+          <span class="footer-app-store">
+            <i class="fa-brands fa-google-play"></i>
+            <a href="#">GOOGLE PLAY STORE</a>
+          </span>
+        </div>
+        <!-- Footer Socials -->
+        <div class="footer-socials">
+          <i class="fa-brands fa-facebook-f footer-social"></i>
+          <i class="fa-brands fa-instagram footer-social"></i>
+          <i class="fa-brands fa-tiktok footer-social"></i>
+          <i class="fa-brands fa-twitter footer-social"></i>
+        </div>
       </div>
       <!-- Footer Links -->
       <nav class="footer-nav">
         <ul class="footer-links">
-          <li class="footer-link">Home</li>
-          <li class="footer-link">Menu</li>
-          <li class="footer-link">About</li>
-          <li class="footer-link">Reviews</li>
+          <a href="#home" class="nav-link-a"><li class="footer-link">Home</li></a>
+          <a href="#menu" class="nav-link-a"><li class="footer-link">Menu</li></a>
+          <a href="#about" class="nav-link-a"><li class="footer-link">About</li></a>
+          <a href="#reviews" class="nav-link-a"><li class="footer-link">Reviews</li></a>
         </ul>
       </nav>
       <!-- Copyright -->
@@ -268,6 +271,7 @@
         <p>Copyright </p>
         <img src="assets/copyright.svg" alt="copyright" class="copyright-img">
         <p> 2022 VictorMtzCodes</p>
+      </div>
       </div>
     </footer>
     <!-- FOOTER END -->
