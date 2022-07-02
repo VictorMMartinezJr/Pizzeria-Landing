@@ -115,10 +115,8 @@ menuCategory.forEach((category) => {
             menuItems.insertAdjacentHTML(
               "beforeend",
               `
-                     <div class="menu-item">
-                <div class="menu-item-img-container">
-              <img src=${data.img} alt="italian special pizza" class="menu-item-pizza-img" />
-              </div>
+            <div class="menu-item">
+              <img src=${data.img} alt=${data.alt} class="menu-item-pizza-img" />
               <span class="menu-item-titles">
                 <p class="menu-item-name">${data.name}</p>
                 <p class="menu-item-calories">${data.calories}</p>
@@ -175,10 +173,8 @@ menuCategory.forEach((category) => {
             menuItems.insertAdjacentHTML(
               "beforeend",
               `
-                      <div class="menu-item menu-item-soda">
-                <div class="menu-item-img-container">
-              <img src=${data.img} alt="italian special pizza" class="menu-item-soda-img" />
-              </div>
+            <div class="menu-item menu-item-soda">
+              <img src=${data.img} alt=${data.alt} class="menu-item-soda-img" />
               <span class="menu-item-titles">
                 <p class="menu-item-name">${data.name}</p>
                 <p class="menu-item-calories">${data.calories}</p>
@@ -236,10 +232,8 @@ const loadMenuItems = () => {
         menuItems.insertAdjacentHTML(
           "beforeend",
           `
-                <div class="menu-item">
-                <div class="menu-item-img-container">
-              <img src=${data.img} alt="italian special pizza" class="menu-item-pizza-img" />
-              </div>
+            <div class="menu-item">
+              <img src=${data.img} alt=${data.alt} class="menu-item-pizza-img" />
               <span class="menu-item-titles">
                 <p class="menu-item-name">${data.name}</p>
                 <p class="menu-item-calories">${data.calories}</p>

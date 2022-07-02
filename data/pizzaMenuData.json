@@ -2,14 +2,16 @@
   {
     "id": 0,
     "img": "assets/menu/pizza-special.jpeg",
+    "alt": "italian pizza topped with jalapeno peppers, double pepperoni, ricotta cheese",
     "name": "Italian",
     "calories": "140-280 cal",
-    "info": "Jalapeno peppers, double pepperoni, ricotta cheese",
+    "info": "Jalapeno peppers, double pepperoni, and ricotta cheese",
     "price": "$10.99"
   },
   {
     "id": 1,
     "img": "assets/menu/pizza-pepp.jpeg",
+    "alt": "pepperoni pizza in a pizza box",
     "name": "Pepperoni",
     "calories": "140-280 cal",
     "info": "Your choice of crust covered with our signature pizza sauce, real cheese made from mozzarella, and pepperoni.",
@@ -18,6 +20,7 @@
   {
     "id": 2,
     "img": "assets/menu/pizza-hawaiian.jpeg",
+    "alt": "pizza with pineapple, bacon, mozzarella, and fresh ham outside",
     "name": "Hawaiian",
     "calories": "140-280 cal",
     "info": "Pineapple, Canadian bacon, Wisconsin mozzarella, fresh ham",
@@ -26,6 +29,7 @@
   {
     "id": 3,
     "img": "assets/menu/pizza-veggie.jpeg",
+    "alt": "a hand taking a slice of veggie pizza from the whole",
     "name": "Veggie",
     "calories": "140-280 cal",
     "info": "Fresh spinach, bell peppers, pickles, white onions, Roma tomatoes, mushrooms",
@@ -34,6 +38,7 @@
   {
     "id": 4,
     "img": "assets/menu/pizza-cheese.jpeg",
+    "alt": "cheese pizza sitting on a table next to vegetables",
     "name": "Cheese",
     "calories": "766 cal",
     "info": "Real cheese made from mozzarella on top of our signature pizza sauce with your choice of crust, then baked to a golden brown",
@@ -42,6 +47,7 @@
   {
     "id": 5,
     "img": "assets/menu/pizza-onion.jpg",
+    "alt": "slice being taken from an onion covered pizza whole",
     "name": "Onion",
     "calories": "170-250 cal",
     "info": "A white pizza covered with freshly cut onions",
@@ -50,6 +56,7 @@
   {
     "id": 6,
     "img": "assets/menu/pizza-gardenfresh.jpg",
+    "alt": "slice being taken from an pizza covered with mushrooms, olives, and peppers",
     "name": "Garden Fresh",
     "calories": "110-220 cal",
     "info": "Pizza topped with juicy fresh mushrooms, olives, and peppers",
@@ -58,6 +65,7 @@
   {
     "id": 7,
     "img": "assets/menu/pizza-sausage.jpeg",
+    "alt": "sausage pizza whole inside a pizza box",
     "name": "Sausage",
     "calories": "150-200 cal",
     "info": "Our signature pizza sauce layered with sausage and real cheese made from mozzarella for a taste you'll crave.",
