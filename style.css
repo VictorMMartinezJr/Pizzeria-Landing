@@ -355,11 +355,8 @@ body {
 }
 .menu-item-add-to-order:active {
   transform: scale(1.2);
-  background-color: var(--orange);
-  color: var(--white);
 }
-.size:hover,
-.menu-item-add-to-order:hover {
+.size:hover {
   background-color: var(--orange);
   color: var(--white);
 }
