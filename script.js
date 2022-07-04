@@ -224,11 +224,7 @@ tlLoadHero.fromTo(
   { y: 0, opacity: 1, duration: 0.65 },
   "<50%"
 );
-tlLoadHero.fromTo(
-  heroPizza,
-  { x: 200, rotation: "45deg", opacity: 0 },
-  { x: 0, opacity: 1, rotation: "-0deg", duration: 0.65 }
-);
+tlLoadHero.fromTo(heroPizza, { opacity: 0 }, { opacity: 1, duration: 0.65 });
 
 // Fade up elements
 const fadeUpElements = document.querySelectorAll(".fade-up");
