@@ -1,8 +1,8 @@
 [
   {
     "id": 0,
-    "img": "assets/menu/coca-cola.png",
-    "alt": "a red can of coca cola",
+    "img": "assets/menu/coca-cola.jpg",
+    "alt": "a red can of coca cola in ice",
     "name": "Coca Cola",
     "calories": "182 cal",
     "info": "A carbonated, sweetened soft drink and the world's best-selling drink",
@@ -10,8 +10,8 @@
   },
   {
     "id": 1,
-    "img": "assets/menu/sprite.png",
-    "alt": "a green can of sprite",
+    "img": "assets/menu/sprite.jpg",
+    "alt": "a green can of sprite in ice",
     "name": "Sprite",
     "calories": "192 cal",
     "info": "A lemon and lime-flavoured soft drink",
@@ -19,8 +19,8 @@
   },
   {
     "id": 2,
-    "img": "assets/menu/fanta.png",
-    "alt": "a orange can of orange fanta",
+    "img": "assets/menu/fanta.jpg",
+    "alt": "a orange can of orange fanta in ice",
     "name": "Fanta",
     "calories": "150 cal",
     "info": "Bright, bubbly, instantly refreshing and great tasting",
@@ -28,17 +28,17 @@
   },
   {
     "id": 3,
-    "img": "assets/menu/dietcoke.png",
-    "alt": "a grey can of diet coca cola",
+    "img": "assets/menu/diet-pepsi.jpg",
+    "alt": "a grey can of diet pepsi in ice",
     "name": "Diet Coke",
     "calories": "0 cal",
-    "info": "All the coca-cola, none of the sugar or calores.",
+    "info": "All the pespi, none of the sugar or calores.",
     "price": "$1.99"
   },
   {
     "id": 4,
-    "img": "assets/menu/pepsi.png",
-    "alt": "a dark blue can of pepsi",
+    "img": "assets/menu/pepsi.jpg",
+    "alt": "a dark blue can of pepsi in ice",
     "name": "Pespi",
     "calories": "150 cal",
     "info": "A citrusy flavor carbonated drink",
