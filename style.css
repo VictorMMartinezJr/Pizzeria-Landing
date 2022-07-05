@@ -215,6 +215,13 @@ body {
   right: -80px;
 }
 
+/* Website h2's*/
+.section-title {
+  margin: 2rem 0;
+  font-weight: 400;
+  text-align: center;
+}
+
 /* MENU */
 .menu {
   min-height: 100vh;
@@ -227,10 +234,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.menu-title {
-  margin: 2rem 0;
-  font-weight: 400;
-}
+
 .menu-categories {
   display: flex;
   justify-content: space-evenly;
@@ -529,6 +533,7 @@ body {
   font-size: 1.2rem;
   margin-right: 1rem;
   cursor: pointer;
+  color: var(--white);
 }
 .footer-social:nth-last-child(1) {
   margin-right: 0;
@@ -544,6 +549,7 @@ body {
   margin: 1rem 0;
   padding: 0.5rem;
   cursor: pointer;
+  list-style: none;
 }
 .copyright {
   display: flex;
@@ -801,6 +807,7 @@ body {
     .icon-social {
       font-size: 1.2rem;
       cursor: pointer;
+      color: var(--white);
     }
     /* NAVBAR */
     .navbar {
@@ -838,7 +845,6 @@ body {
       letter-spacing: 5px;
     }
     .hero-pizza-description {
-      margin: 1.5rem 0;
       font-size: 1.5rem;
     }
     .hero-pizza-price {

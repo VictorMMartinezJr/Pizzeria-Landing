@@ -28,27 +28,29 @@
   </head>
   <body data-barba="wrapper">
     <div class="side-socials">
-      <i class="fa-brands fa-facebook-f icon-social facebook"></i>
-      <i class="fa-brands fa-twitter icon-social twitter"></i>
+      <a href="#" class="icon-social facebook" aria-label="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" class="icon-social twitter" aria-label="twitter"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#" class="icon-social" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" class="icon-social tiktok" aria-label="tiktok"><i class="fa-brands fa-tiktok"></i></a>
     </div>
     <!-- Nav START-->
     <nav class="navbar">
-      <div class="blob"></div>
-      <div class="burger">
+      <div class="blob" aria-hidden="true"></div>
+      <div class="burger" aria-hidden="true">
         <div class="burger-line line-1"></div>
         <div class="burger-line line-2"></div>
         <div class="burger-line line-3"></div>
       </div>
       <ul class="nav-links">
-         <a href="#menu" class="nav-link-a nav-link"><li>Menu</li></a>
-         <a href="#about" class="nav-link-a nav-link"><li>About</li></a>
-         <a href="#reviews" class="nav-link-a nav-link"><li>Reviews</li></a>
-         <a href="#newsletter" class="nav-link-a nav-link"><li>NewsLetter</li></a>
-      </ul>
+         <li class="nav-link"><a href="#menu" class="nav-link-a">Menu</a></li>
+         <li class="nav-link"><a href="#about" class="nav-link-a">About</a></li>
+         <li class="nav-link"><a href="#reviews" class="nav-link-a">Reviews</a></li>
+         <li class="nav-link"><a href="#newsletter" class="nav-link-a">NewsLetter</a></li>
+        </ul>
       <h1 class="nav-h1">
         <span class="green">P</span>IZZOOO<span class="orange">!</span>
       </h1>
-      <img src="assets/cart.svg" alt="shopping cart" class="img-cart" />
+      <img src="assets/cart.svg" alt="shopping cart" class="img-cart" aria-hidden="true"/>
     </nav>
     <!-- Nav END-->
 
@@ -66,8 +68,8 @@
               <h2 class="hero-pizza-name">VEGGIE.</h2>
             </div>
             <p class="hero-pizza-description">
-              Fresh spinach, bell peppers, pickles, white onions, Roma tomatoes,
-              mushrooms<br />(140-200 cal)
+              Fresh spinach, bell peppers, pickles, white onions, Roma tomatoes, mushrooms<br />(140-200
+              cal)
             </p>
           </div>
           <p class="hero-pizza-price">$11.99</p>
@@ -76,24 +78,24 @@
           <img
             src="assets/leaf.png"
             alt="green leaf"
-            class="absolute-img hero-text-leaf"
+            class="absolute-img hero-text-leaf" aria-hidden="true"
           />
           <img
             src="assets/tomato-leaf.png"
             alt="1 tomato and 1 green leaf next to each other"
-            class="absolute-img hero-tomato-leaf-img"
+            class="absolute-img hero-tomato-leaf-img" aria-hidden="true"
           />
         </div>
         <!-- Hero Pizza Image -->
-        <div class="hero-images">
+        <div class="hero-images" aria-hidden="true">
           <!-- Main Pizza Img -->
           <img
-            src="assets/pizza-veggie.png"
-            alt="veggie pizza"
+            src="assets/pizza-special.png"
+            alt="italian special pizza"
             class="hero-img-pizza"
           />
           <!-- Right Arrow Icon -->
-          <a href="index.html"
+          <a href="index.html" aria-label="Go to the italian pizza page"
             ><img
               src="assets/right-arrow.svg"
               alt="right-arrow"
@@ -111,10 +113,10 @@
     </div>
     <!-- Hero END-->
 
-        <!-- Menu START -->
+    <!-- Menu START -->
     <section class="menu" id="menu">
       <div class="menu-content">
-        <h2 class="menu-title section-title">Menu</h2>
+        <h2 class="menu-title section-title" aria-label="menu section">MENU</h2>
         <div class="menu-categories">
           <div class="menu-category active" id="0">
             <p class="menu-category-name">Pizzas</p>
@@ -133,7 +135,7 @@
             />
           </div>
         </div>
-        <div class="menu-items fade-up">
+        <div class="menu-items">
           <!-- Content here dynamically added with JavaScript -->
       </div>
     </section>
@@ -142,7 +144,8 @@
     <!-- About BEGIN -->
     <section class="about fade-up" id="about">
       <div class="about-content">
-        <div class="about-main">
+        <h2 class="section-title" aria-label="about section">ABOUT</h2>
+        <div class="about-main" aria-hidden="true">
           <!-- About Img -->
           <img src="assets/chef-cooking.jpeg" alt="chef putting pizza into oven">
           <!-- Absolutely position block text -->
@@ -165,12 +168,13 @@
     <!-- REVIEW START -->
     <section class="reviews fade-up" id="reviews">
       <div class="reviews-content">
+        <h2 class="section-title" aria-label="reviews section">REVIEWS</h2>
         <div class="review-cards">
           <!-- Card 1 -->
-          <div class="review-card">
+          <div class="review-card" aria-label="review number one">
             <div class="reviewer">
               <p>Selena D</p>
-              <span class="review-stars">
+              <span class="review-stars" aria-hidden="true">
               <img src="assets/star-svgrepo-com.svg" alt="gold star" class="star">
               <img src="assets/star-svgrepo-com.svg" alt="gold star" class="star">
               <img src="assets/star-svgrepo-com.svg" alt="gold star" class="star">
@@ -180,13 +184,13 @@
             </div>
             <p class="review-text">This cozy pizzeria has left the best impressions! Hospitable hosts, delicious dishes, beautiful presentation, wide pizza list and wonderful dessert. I recommend to everyone!</p>
             <p class="review-company">OpenTable</p>
-            <img src="assets/review-pizza.png" alt="pepperoni pizza" class="review-img">
+            <img src="assets/review-pizza.png" alt="pepperoni pizza" class="review-img" aria-hidden="true">
           </div>
           <!-- Card 2 -->
           <div class="review-card">
             <div class="reviewer-info">
               <p class="reviewer">Ashley</p>
-              <span class="review-stars">
+              <span class="review-stars" aria-hidden="true">
               <img src="assets/star-svgrepo-com.svg" alt="gold star" class="star">
               <img src="assets/star-svgrepo-com.svg" alt="gold star" class="star">
               <img src="assets/star-svgrepo-com.svg" alt="gold star" class="star">
@@ -196,13 +200,13 @@
             </div>
             <p class="review-text">It’s a great experience. The ambiance is very welcoming and charming. Amazing pizza and service. Staff are extremely knowledgeable and make great recommendations.</p>
             <p class="review-company">Yelp</p>
-            <img src="assets/review-fire.png" alt="pepperoni pizza" class="review-img">
+            <img src="assets/review-fire.png" alt="fire icon" class="review-img" aria-hidden="true">
           </div>
           <!-- Card 3 -->
           <div class="review-card">
             <div class="reviewer">
               <p>Josh</p>
-              <span class="review-stars">
+              <span class="review-stars" aria-hidden="true">
               <img src="assets/star-svgrepo-com.svg" alt="gold star" class="star">
               <img src="assets/star-svgrepo-com.svg" alt="gold star" class="star">
               <img src="assets/star-svgrepo-com.svg" alt="gold star" class="star">
@@ -212,7 +216,7 @@
             </div>
             <p class="review-text">This is my absolute favorite pizzeria in Atlanta. The food is always fantastic and no matter what I order I am always delighted with my pizza! Servers are also great and always efficient, happy and polite.</p>
             <p class="review-company">Zagat</p>
-            <img src="assets/review-leaf.png" alt="pepperoni pizza" class="review-img">
+            <img src="assets/review-leaf.png" alt="green leaf icon" class="review-img" aria-hidden="true">
           </div>
         </div>
       </div>
@@ -222,7 +226,7 @@
     <!-- NEWSLETTER START -->
     <section class="newsletter" id="newsletter">
       <div class="newsletter-content">
-        <h2 class="newsletter-title">Subscibe to our newsletter!</h2>
+        <h2 class="newsletter-title">Subscribe to our newsletter!</h2>
         <!-- Newsletter Email Input-->
         <form>
           <input type="email" placeholder="Email" class="newsletter-input">
@@ -240,34 +244,34 @@
           <h2 class="footer-apps-title">Get our mobile app</h2>
           <span class="footer-app-store">
             <i class="fa-brands fa-apple"></i>
-            <a href="#">APPLE STORE</a>
+            <a href="#" aria-label="Get our app on the apple store">APPLE STORE</a>
           </span>
           <span class="footer-app-store">
             <i class="fa-brands fa-google-play"></i>
-            <a href="#">GOOGLE PLAY STORE</a>
+            <a href="#" aria-label="Get our app on the google play store">GOOGLE PLAY STORE</a>
           </span>
         </div>
         <!-- Footer Socials -->
         <div class="footer-socials">
-          <i class="fa-brands fa-facebook-f footer-social"></i>
-          <i class="fa-brands fa-instagram footer-social"></i>
-          <i class="fa-brands fa-tiktok footer-social"></i>
-          <i class="fa-brands fa-twitter footer-social"></i>
+          <a href="#" class="footer-social" aria-label="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="footer-social" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="footer-social" aria-label="tiktok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" class="footer-social" aria-label="twitter"><i class="fa-brands fa-twitter"></i></a>
         </div>
       </div>
       <!-- Footer Links -->
       <nav class="footer-nav">
         <ul class="footer-links">
-          <a href="#home" class="nav-link-a footer-link"><li>Home</li></a>
-          <a href="#menu" class="nav-link-a footer-link"><li>Menu</li></a>
-          <a href="#about" class="nav-link-a footer-link"><li>About</li></a>
-          <a href="#reviews" class="nav-link-a footer-link"><li>Reviews</li></a>
+          <li class="footer-link"><a href="#home" class="nav-link-a">Home</a></li>
+          <li class="footer-link"><a href="#menu" class="nav-link-a">Menu</a></li>
+          <li class="footer-link"><a href="#about" class="nav-link-a">About</a></li>
+          <li class="footer-link"><a href="#reviews" class="nav-link-a">Reviews</a></li>
         </ul>
       </nav>
       <!-- Copyright -->
       <div class="copyright">
         <p>Copyright </p>
-        <img src="assets/copyright.svg" alt="copyright" class="copyright-img">
+        <img src="assets/copyright.svg" alt="copyright" class="copyright-img" aria-hidden="true">
         <p> 2022 VictorMtzCodes</p>
       </div>
       </div>

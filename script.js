@@ -111,9 +111,9 @@ const menuItemHTML = (data) => {
               <p class="menu-item-price">${data.price}</p>
               <div class="menu-item-btns">
                 <span class="sizes">
-                  <button class="size">sm</button>
-                  <button class="size">md</button>
-                  <button class="size">lg</button>
+                  <button class="size" aria-label="select a small ${data.name} pizza">sm</button>
+                  <button class="size" aria-label="select a medium ${data.name} pizza">md</button>
+                  <button class="size" aria-label="select a large ${data.name} pizza">lg</button>
                 </span>
                 <button class="menu-item-add-to-order">ADD TO ORDER</button>
               </div>
