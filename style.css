@@ -716,7 +716,6 @@ body {
   .img-cart {
     height: 30px;
   }
-
   /* MENU */
   .menu-items {
     width: 80%;
@@ -796,6 +795,50 @@ body {
     left: 50%;
     transform: translateX(-50%);
   }
+  @media screen and (max-height: 600px) {
+      .blob {
+        top: -10px;
+        width: 100px;
+      }
+    /* HERO */
+    .hero-pizza-text {
+    margin-top: 1rem;
+    }
+    .hero-pizza-description {
+      margin: 0;
+      font-size: 1rem;
+    }
+    .hero-pizza-price {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+    .hero-img-pizza {
+      height: 200px;
+    }
+  }
+  @media screen and (min-height: 1300px) {
+    .hero-img-pizza {
+      height: 500px;
+    }
+    /* HERO */
+    .hero-pizza-subtitle {
+      font-size: 1.5rem;
+    }
+    .hero-pizza-name {
+      font-size: 4rem;
+      letter-spacing: 5px;
+    }
+    .hero-pizza-description {
+      font-size: 2rem;
+    }
+    .hero-pizza-price {
+      font-size: 2.5rem;
+    }
+    .hero-order-btn {
+      font-size: 1.5rem;
+    }
+  }
+}
   @media screen and (min-width: 1280px) {
     /* SIDE SOCIALS */
     .side-socials {
