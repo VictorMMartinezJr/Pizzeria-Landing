@@ -116,22 +116,24 @@
     <!-- Menu START -->
     <section class="menu" id="menu">
       <div class="menu-content">
-        <h2 class="menu-title section-title" aria-label="menu section">MENU</h2>
+        <h2 class="menu-title section-title">MENU</h2>
         <div class="menu-categories">
           <div class="menu-category active" id="0">
-            <p class="menu-category-name">Pizzas</p>
+            <button class="menu-category-btn" aria-label="Select pizza menu">Pizzas</button>
             <img
               src="assets/menu/pizza-icon.svg"
               alt="pizza"
               class="menu-category-icon"
+              aria-hidden="true"
             />
           </div>
           <div class="menu-category" id="1">
-            <p class="menu-category-name">Drinks</p>
+            <button class="menu-category-btn" aria-label="Select drinks menu">Drinks</button>
             <img
               src="assets/menu/drink-icon.svg"
               alt="pizza"
               class="menu-category-icon"
+              aria-hidden="true"
             />
           </div>
         </div>
@@ -144,7 +146,7 @@
     <!-- About BEGIN -->
     <section class="about fade-up" id="about">
       <div class="about-content">
-        <h2 class="section-title" aria-label="about section">ABOUT</h2>
+        <h2 class="section-title">ABOUT</h2>
         <div class="about-main" aria-hidden="true">
           <!-- About Img -->
           <img src="assets/chef-cooking.jpeg" alt="chef putting pizza into oven">
@@ -168,7 +170,7 @@
     <!-- REVIEW START -->
     <section class="reviews fade-up" id="reviews">
       <div class="reviews-content">
-        <h2 class="section-title" aria-label="reviews section">REVIEWS</h2>
+        <h2 class="section-title">REVIEWS</h2>
         <div class="review-cards">
           <!-- Card 1 -->
           <div class="review-card" aria-label="review number one">
@@ -243,11 +245,11 @@
         <div class="footer-apps">
           <h2 class="footer-apps-title">Get our mobile app</h2>
           <span class="footer-app-store">
-            <i class="fa-brands fa-apple"></i>
+            <i class="fa-brands fa-apple" aria-hidden="true"></i>
             <a href="#" aria-label="Get our app on the apple store">APPLE STORE</a>
           </span>
           <span class="footer-app-store">
-            <i class="fa-brands fa-google-play"></i>
+            <i class="fa-brands fa-google-play" aria-hidden="true"></i>
             <a href="#" aria-label="Get our app on the google play store">GOOGLE PLAY STORE</a>
           </span>
         </div>
