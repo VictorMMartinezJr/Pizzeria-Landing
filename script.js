@@ -17,10 +17,46 @@ const menuItemCalories = document.querySelector(".menu-item-calories");
 const menuItemInfo = document.querySelector(".menu-item-info");
 const menuItemPrice = document.querySelector(".menu-item-price");
 
+// Hero section animations on page load
+const tlLoadHero = gsap.timeline({
+  default: { ease: "Power2.easeOut" },
+});
+tlLoadHero.fromTo(
+  heroPizzaSubtitle,
+  { y: 200, opacity: 0 },
+  { y: 0, opacity: 1, duration: 0.65 }
+);
+tlLoadHero.fromTo(
+  heroPizzaName,
+  { y: 200, opacity: 0 },
+  { y: 0, opacity: 1, duration: 0.65 },
+  "<50%"
+);
+tlLoadHero.fromTo(
+  heroPizzadDescription,
+  { y: 200, opacity: 0 },
+  { y: 0, opacity: 1, duration: 0.65 },
+  "<50%"
+);
+tlLoadHero.fromTo(
+  heroPizzadPrice,
+  { y: 200, opacity: 0 },
+  { y: 0, opacity: 1, duration: 0.65 },
+  "<50%"
+);
+tlLoadHero.fromTo(
+  heroOrderBtn,
+  { y: 200, opacity: 0 },
+  { y: 0, opacity: 1, duration: 0.65 },
+  "<50%"
+);
+tlLoadHero.fromTo(heroPizza, { opacity: 0 }, { opacity: 1, duration: 0.65 });
+
 // Fires when burger icon is clicked
 iconBurger.addEventListener("click", () => {
   iconBlob.classList.toggle("active");
   iconBurgerLines.forEach((line) => line.classList.toggle("active"));
+  navLinks.style = "";
   navLinks.classList.toggle("active");
 });
 
@@ -33,7 +69,9 @@ window.addEventListener("scroll", () => {
   navLinks.classList.remove("active");
 });
 
-// Barba JS //
+/*////////////////
+// BARBA JS //
+///////////////*/
 const tlLeave = gsap.timeline({
   default: { duration: 0.75, ease: "Power2.easeOut" },
 });
@@ -96,7 +134,9 @@ barba.init({
   ],
 });
 
+/*////////////////
 // MENU SECTION //
+///////////////*/
 const menuCategory = document.querySelectorAll(".menu-category");
 // HTML to add to menu items
 const menuItemHTML = (data) => {
@@ -189,42 +229,9 @@ const loadMenuItems = () => {
 };
 loadMenuItems();
 
+/*/////////////////////////
 // INTERSECTION OBSERVER //
-
-// Hero section animations on page load
-const tlLoadHero = gsap.timeline({
-  default: { ease: "Power2.easeOut" },
-});
-tlLoadHero.fromTo(
-  heroPizzaSubtitle,
-  { y: 200, opacity: 0 },
-  { y: 0, opacity: 1, duration: 0.65 }
-);
-tlLoadHero.fromTo(
-  heroPizzaName,
-  { y: 200, opacity: 0 },
-  { y: 0, opacity: 1, duration: 0.65 },
-  "<50%"
-);
-tlLoadHero.fromTo(
-  heroPizzadDescription,
-  { y: 200, opacity: 0 },
-  { y: 0, opacity: 1, duration: 0.65 },
-  "<50%"
-);
-tlLoadHero.fromTo(
-  heroPizzadPrice,
-  { y: 200, opacity: 0 },
-  { y: 0, opacity: 1, duration: 0.65 },
-  "<50%"
-);
-tlLoadHero.fromTo(
-  heroOrderBtn,
-  { y: 200, opacity: 0 },
-  { y: 0, opacity: 1, duration: 0.65 },
-  "<50%"
-);
-tlLoadHero.fromTo(heroPizza, { opacity: 0 }, { opacity: 1, duration: 0.65 });
+////////////////////////*/
 
 // Fade up elements
 const fadeUpElements = document.querySelectorAll(".fade-up");
