@@ -69,9 +69,9 @@ window.addEventListener("scroll", () => {
   navLinks.classList.remove("active");
 });
 
-/*////////////////
+//////////////
 // BARBA JS //
-///////////////*/
+//////////////
 const tlLeave = gsap.timeline({
   default: { duration: 0.75, ease: "Power2.easeOut" },
 });
@@ -134,9 +134,9 @@ barba.init({
   ],
 });
 
-/*////////////////
+//////////////////
 // MENU SECTION //
-///////////////*/
+/////////////////
 const menuCategory = document.querySelectorAll(".menu-category");
 // HTML to add to menu items
 const menuItemHTML = (data) => {
